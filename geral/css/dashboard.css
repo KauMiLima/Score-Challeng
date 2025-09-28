@@ -1,4 +1,6 @@
-
+body{
+    background-color: #030712;
+}
 .parent {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -14,12 +16,22 @@
 }
 
 .div3 {
-    background-color: black;
+    background-color: #101828;
     grid-row: span 2 / span 2;
     grid-column-start: 1;
     grid-row-start: 3;
 }
-
+.bt-nav{
+display: flex;
+gap: 10px;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+.bt-nav button.active-button,
+.bt-nav a.active-button {
+  background-color: #112652; /* A cor desejada */
+  color: white; 
+}
 .div4 {
     background-color: blue;
     grid-column-start: 1;
@@ -49,9 +61,63 @@
 }
 
 .div8 {
-    background-color: darkgoldenrod;
     grid-row: span 3 / span 3;
     grid-column-start: 5;
     grid-row-start: 3;
+}
+.div8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.timer-display {
+  font-size: 3em;
+  font-family: monospace;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.timer-controls button {
+  padding: 10px 20px;
+  font-size: 1em;
+  margin: 0 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#startButton {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+}
+
+#startButton:hover {
+  background-color: #45a049;
+}
+
+#resetButton {
+  background-color: #f44336; /* Vermelho */
+  color: white;
+}
+
+#resetButton:hover {
+  background-color: #da190b;
+}
+.reset-counter {
+  margin-top: 15px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+#resetCount {
+  font-weight: bold;
+  color: #112652;
 }
         
